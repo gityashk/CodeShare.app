@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --accent-color: #e2e8f0;
+    --background-color: #242124;
+}
+
+body {
+    font-family: "Fira Code", monospace;
+    background-color: var(--background-color);
+}
+
+@layer components {
+
+    .playground--container {
+        @apply lg:flex m-5 gap-5;
+    }
+
+    .main--container {
+        @apply w-full lg:w-1/2 border-4 border-[var(--accent-color)] rounded-t-lg;
+    }
+
+    .container--codemirror-iframe {
+        @apply bg-white
+    }
+
+    .section--headers {
+        @apply flex h-9 bg-[var(--accent-color)] border-b-4 border-[var(--accent-color)];
+    }
+
+    .divider {
+        @apply block h-5 lg:hidden;
+    }
+
+    .btn {
+        @apply gap-1 hover:bg-gray-100;
+    }
+
+    .btn-share {
+        @apply bg-white hover:bg-white;
+    }
+
+    .btn-circle {
+        @apply w-8 h-8 ml-2 rounded-full flex items-center justify-center bg-white
+    }
+
+    .iframe-tag {
+        @apply h-[80.3vh] w-full;
+    }
+
+    .section--header-preview {
+        @apply bg-white w-full gap-2 cursor-pointer;
+    }
+
+    .section--headers-commons {
+        @apply flex items-center text-sm tracking-tighter px-2 border border-[var(--accent-color)] rounded-md;
+    }
+
+}
