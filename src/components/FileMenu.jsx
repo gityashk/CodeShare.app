@@ -9,7 +9,7 @@ export default function FileMenu({ activeFile, setActiveFile }) {
                 <button
                     onClick={() => setActiveFile("html")}
                     className="btn section--headers-commons"
-                    style={{ backgroundColor: activeFile == "html" ? "#fff" : "" }}
+                    style={{ backgroundColor: activeFile == "html" ? "#EDEAE0" : "" }}
                 >
                     <IconHTML />
                     <span>index.html</span>
@@ -17,7 +17,7 @@ export default function FileMenu({ activeFile, setActiveFile }) {
                 <button
                     onClick={() => setActiveFile("css")}
                     className="btn section--headers-commons"
-                    style={{ backgroundColor: activeFile == "css" ? "#fff" : "" }}
+                    style={{ backgroundColor: activeFile == "css" ? "#EDEAE0" : "" }}
                 >
                     <IconCSS />
                     <span>style.css</span>
@@ -25,7 +25,7 @@ export default function FileMenu({ activeFile, setActiveFile }) {
                 <button
                     onClick={() => setActiveFile("js")}
                     className="btn section--headers-commons"
-                    style={{ backgroundColor: activeFile == "js" ? "#fff" : "" }}
+                    style={{ backgroundColor: activeFile == "js" ? "#EDEAE0" : "" }}
                 >
                     <IconJS />
                     <span>script.js</span>

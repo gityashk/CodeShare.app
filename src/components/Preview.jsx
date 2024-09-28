@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react"
-import IconHome from "./icons/IconHome";
+import { useContext, useEffect, useState } from "react";
 import Actions from "./Actions";
+import { CodesContext } from "../contexts/CodesContext";
 
-export default function Preview({ codeObj }) {
+export default function Preview() {
 
+    const { codeObj } = useContext(CodesContext);
     const [doc, setDoc] = useState("");
 
     useEffect(() => {
@@ -25,8 +26,8 @@ export default function Preview({ codeObj }) {
                 </script>
             </body>
             </html>
-        `
-        setDoc(newDoc)
+        `;
+        setDoc(newDoc);
     }, [codeObj])
 
     return (

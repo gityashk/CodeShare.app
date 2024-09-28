@@ -1,5 +1,5 @@
 {
-    "html": "<body>\n\t<h2>Hello, World!</h2>\n</body>\n",
-    "css": "body {\n\tbackground: #F4F0EC;\n\ttext-align: center;\n}\n",
+    "html": "<body>\n\t<h2>Welcome!</h2>\n</body>\n",
+    "css": "body {\n\tbackground: #333;\n\ttext-align: center;\n\tcolor: whitesmoke;\n\theight: 90vh;\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: center;\n\tfont-size: 2rem;\n}\n",
     "js": ""
 }

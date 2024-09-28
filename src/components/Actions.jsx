@@ -2,12 +2,14 @@ import IconLink from "./icons/IconLink";
 import IconOpen from "./icons/IconOpen";
 import IconDownload from "./icons/IconDownload";
 import { downloadFile, previewInNewTab } from "../util/util";
+import { useNavigate } from "react-router-dom";
 
 export default function Actions({ codeObj }) {
+    const navigate = useNavigate();
     return (
         <>
             <div className="section--headers">
-                <button className="btn btn-share section--headers-commons">
+                <button onClick={() => navigate("/auth")} className="btn btn-share section--headers-commons">
                     <IconLink />
                     <span>Share</span>
                 </button>
