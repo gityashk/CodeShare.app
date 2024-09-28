@@ -12,7 +12,7 @@ export default function Header() {
                     </span>
                 </div>
                 <div>
-                    <a href=""><IconGithub /></a>
+                    <a href="https://github.com/gityashk/CodeShare.app"><IconGithub /></a>
                 </div>
             </div>
         </>

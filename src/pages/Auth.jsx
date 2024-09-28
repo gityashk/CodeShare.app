@@ -104,7 +104,7 @@ export default function Auth() {
                         onClick={sendOTP}
                         disabled={email.length < 8}
                         className="auth-btn"
-                    >Send OPT</button>
+                    >Send OTP</button>
                     <div>
                         <input
                             className="auth-input"
